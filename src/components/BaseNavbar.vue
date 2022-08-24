@@ -44,6 +44,7 @@ export default {
 <style scoped>
 #navbar{
     height: 100px;
+    margin-bottom: 90px;
 }
 
 a:hover{
