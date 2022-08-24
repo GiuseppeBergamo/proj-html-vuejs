@@ -11,8 +11,9 @@ import BaseHeader from "./components/BaseHeader.vue";
 export default {
   name: 'App',
   components: {
-    BaseHeader
-}
+    BaseHeader,
+  },
+  
 }
 </script>
 
@@ -32,4 +33,5 @@ a{
   text-decoration: none;
   color: white;
 }
+
 </style>
