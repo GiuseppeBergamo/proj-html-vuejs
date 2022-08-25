@@ -46,11 +46,11 @@ export default {
         },
         {
           id: 3,
-          url: require('/src/assets/img/h1-team-3a.jpg')
+          url: require('/src/assets/img/h1-team-4a.jpg')
         },
         {
           id: 4,
-          url: require('/src/assets/img/h1-team-2a.jpg')
+          url: require('/src/assets/img/h1-team-3a.jpg')
         }
       ],
       urbanTastes: [

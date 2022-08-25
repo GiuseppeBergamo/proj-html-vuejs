@@ -6,6 +6,7 @@
     </section>
     <SplitSectionFirst></SplitSectionFirst>
     <BaseJumbotron></BaseJumbotron>
+    <BannerSection :items="bannerTeam" class="mb-2"></BannerSection>
   </main>
 </template>
 
