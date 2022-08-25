@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <BaseHeader :urbanTastes="urbanTastes"></BaseHeader>
-    <TheMain :bannerAdvs="bannerAdvs" :bannerTeam="bannerTeam" :sliderQuotes="sliderQuotes"></TheMain>
+    <TheMain :bannerAdvs="bannerAdvs" :bannerTeam="bannerTeam" :sliderQuotes="sliderQuotes" :logos="logos"></TheMain>
   </div>
 </template>
 
@@ -79,6 +79,28 @@ export default {
           id: 3,
           text: "LA MIGLIORE PIZZERIA PER AVERE LA VERA ESPERIENZA NEWYORKESE",
           author: "REPUBBLICA 2022"
+        }
+      ],
+      logos: [
+        {
+          id: 1,
+          url: require('/src/assets/img/h1-clients-img-4.png')
+        },
+        {
+          id: 2,
+          url: require('/src/assets/img/h1-clients-img-3.png')
+        },
+        {
+          id: 3,
+          url: require('/src/assets/img/h1-clients-img-1.png')
+        },
+        {
+          id: 4,
+          url: require('/src/assets/img/h1-clients-img-2.png')
+        },
+        {
+          id: 5,
+          url: require('/src/assets/img/h1-clients-img-5.png')
         }
       ]
     }
