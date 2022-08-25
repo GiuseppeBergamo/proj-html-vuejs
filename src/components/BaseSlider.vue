@@ -4,7 +4,12 @@
         <button type="button" id="prev" class="btn btn-light" @click="goToPrev">PREV</button>
 
         <div id="content">
-            <img v-for="(image, index) in urbanTastesImages" :key="index" :src="image.url" alt="urban-tastes" class="img-fluid" :class="{'active' : currentIndex === index}">
+            <div v-if="items[0].url">
+                <img v-for="(item, index) in items" :key="index" :src="item.url" alt="urban-tastes" class="img-fluid" :class="{'active' : currentIndex === index}">
+            </div>
+            <div v-else>
+                
+            </div>
         </div>
 
         <button type="button" id="next" class="btn btn-light" @click="goToNext">NEXT</button>
@@ -14,37 +19,29 @@
 
 <script>
 export default {
-    name: 'BaseSlider',
-    data(){
+    name: "BaseSlider",
+    data() {
         return {
             currentIndex: 0,
-            urbanTastesImages: [
-                {
-                    url: require('../assets/img/h3-rev-img-6.png')
-                },
-                {
-                    url: require('../assets/img/h3-rev-img-4.png')
-                },
-                {
-                    url: require('../assets/img/h3-rev-img-2.png')
-                }
-            ]
-        }
+        };
+    },
+    props: {
+        items: Array
     },
     methods: {
-        goToPrev(){
+        goToPrev() {
             this.currentIndex--;
             if (this.currentIndex < 0) {
                 this.currentIndex = 2;
             }
         },
-        goToNext(){
+        goToNext() {
             this.currentIndex++;
-            if (this.currentIndex == this.urbanTastesImages.length) {
-                this.currentIndex = 0
+            if (this.currentIndex == this.items.length) {
+                this.currentIndex = 0;
             }
         }
-    }
+    },
 }
 </script>
 

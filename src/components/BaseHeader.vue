@@ -1,7 +1,7 @@
 <template>
     <header class="mb-2">
         <BaseNavbar></BaseNavbar>
-        <BaseSlider></BaseSlider>
+        <BaseSlider :items="urbanTastes"></BaseSlider>
     </header>
 </template>
 
@@ -14,6 +14,9 @@ export default {
         BaseNavbar,
         BaseSlider
     },
+    props: {
+        urbanTastes: Array
+    }
     
     
 }   
