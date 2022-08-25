@@ -4,18 +4,21 @@
     <section id="slider-section" class="mb-2">
         <BaseSlider :items="sliderQuotes"></BaseSlider>
     </section>
+    <SplitSectionFirst></SplitSectionFirst>
   </main>
 </template>
 
 <script>
 import BannerSection from "./BannerSection.vue"
 import BaseSlider from "./BaseSlider.vue"
+import SplitSectionFirst from "./SplitSectionFirst.vue";
 export default {
     name: 'TheMain',
     components: {
-        BannerSection,
-        BaseSlider
-    },
+    BannerSection,
+    BaseSlider,
+    SplitSectionFirst
+},
     props: {
         bannerAdvs: Array,
         bannerTeam: Array,
@@ -31,4 +34,5 @@ export default {
     background-size: cover;
     background-position: center;
 }
+
 </style>
