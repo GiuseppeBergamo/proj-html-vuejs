@@ -1,5 +1,5 @@
 <template>
-  <section id="pizzas" class="container py-5">
+  <section id="pizzas" class="container py-5 mb-2">
     <div class="row mb-3">
         <div class="col-12 text-center">
             <p class="fs-small text-darkgrey fw-bold">CHOOSE YOUR FLAVOR</p>
