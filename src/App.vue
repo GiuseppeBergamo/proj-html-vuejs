@@ -67,7 +67,7 @@ export default {
       sliderQuotes: [
         {
           id: 1,
-          text: "FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BESR NEW YORK-STYLE PIZZA SLICE IN NAPLES",
+          text: "FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES",
           author: "WASHINGTON POST 2018"
         },
         {
