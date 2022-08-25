@@ -1,21 +1,34 @@
 <template>
-  <BannerSection :items="bannerAdvs" class="mb-2"></BannerSection>
+  <main>
+    <BannerSection :items="bannerAdvs" class="mb-2"></BannerSection>
+    <section id="slider-section" class="mb-2">
+        <BaseSlider :items="sliderQuotes"></BaseSlider>
+    </section>
+  </main>
 </template>
 
 <script>
 import BannerSection from "./BannerSection.vue"
+import BaseSlider from "./BaseSlider.vue"
 export default {
     name: 'TheMain',
     components: {
-        BannerSection
+        BannerSection,
+        BaseSlider
     },
     props: {
         bannerAdvs: Array,
-        bannerTeam: Array
+        bannerTeam: Array,
+        sliderQuotes: Array
     }
 }
 </script>
 
-<style>
-
+<style scoped>
+#slider-section{
+    background-image: url('../assets/img/h3-testimonials-bckgrnd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 </style>
