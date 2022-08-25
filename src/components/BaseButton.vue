@@ -17,8 +17,8 @@ export default {
     }
 
     .btn-warning{
-        background-color: #d2401e;
-        border-color: #d2401e;
+        background-color: #333333;
+        border-color: #333333;
         color: white;
     }
 </style>
