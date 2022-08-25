@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <BaseHeader :urbanTastes="urbanTastes"></BaseHeader>
-    <TheMain :bannerAdvs="bannerAdvs" :bannerTeam="bannerTeam" :sliderQuotes="sliderQuotes" :logos="logos"></TheMain>
+    <TheMain :bannerAdvs="bannerAdvs" :bannerTeam="bannerTeam" :sliderQuotes="sliderQuotes" :logos="logos" :pizzas="pizzas"></TheMain>
   </div>
 </template>
 
@@ -101,6 +101,44 @@ export default {
         {
           id: 5,
           url: require('/src/assets/img/h1-clients-img-5.png')
+        }
+      ],
+      pizzas: [
+        {
+          id: 1,
+          url: require('/src/assets/img/h3-product-img-1a-100x100.png'),
+          name: 'BISMARK',
+          price: '$30.00'
+        },
+        {
+          id: 2,
+          url: require('/src/assets/img/h3-product-img-2a-150x150.png'),
+          name: 'FIORI DI ZUCCA',
+          price: '$7.00 - $50.00'
+        },
+        {
+          id: 3,
+          url: require('/src/assets/img/h3-product-img-3a-150x150.png'),
+          name: 'VALDOSTANA',
+          price: '$55.00'
+        },
+        {
+          id: 4,
+          url: require('/src/assets/img/h3-product-img-4a-150x150.png'),
+          name: 'PIZZA TARTUFATA',
+          price: '$45.00'
+        },
+        {
+          id: 5,
+          url: require('/src/assets/img/h3-product-img-5a-150x150.png'),
+          name: 'FRANCESCANA',
+          price: '$25.00'
+        },
+        {
+          id: 6,
+          url: require('/src/assets/img/h3-product-img-6a-100x100.png'),
+          name: 'CAMPAGNOLA',
+          price: '$50.00 - $95.00'
         }
       ]
     }

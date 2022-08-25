@@ -8,6 +8,7 @@
     <BaseJumbotron></BaseJumbotron>
     <BannerSection :items="bannerTeam" class="mb-2"></BannerSection>
     <LogosSection :items="logos"></LogosSection>
+    <PizzasSection :items="pizzas"></PizzasSection>
   </main>
 </template>
 
@@ -17,6 +18,7 @@ import BaseSlider from "./BaseSlider.vue";
 import SplitSectionFirst from "./SplitSectionFirst.vue";
 import BaseJumbotron from "./BaseJumbotron.vue"
 import LogosSection from "./LogosSection.vue";
+import PizzasSection from "./PizzasSection.vue";
 export default {
     name: 'TheMain',
     components: {
@@ -24,13 +26,15 @@ export default {
     BaseSlider,
     SplitSectionFirst,
     BaseJumbotron,
-    LogosSection
+    LogosSection,
+    PizzasSection
 },
     props: {
         bannerAdvs: Array,
         bannerTeam: Array,
         sliderQuotes: Array,
-        logos: Array
+        logos: Array,
+        pizzas: Array,
     }
 }
 </script>
