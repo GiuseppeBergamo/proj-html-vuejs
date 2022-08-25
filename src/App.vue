@@ -2,7 +2,7 @@
   <div id="app">
     <BaseHeader :urbanTastes="urbanTastes"></BaseHeader>
     <TheMain :bannerAdvs="bannerAdvs" :bannerTeam="bannerTeam" :sliderQuotes="sliderQuotes" :logos="logos" :pizzas="pizzas"></TheMain>
-    <BaseFooter :pizzaDeals="pizzaDeals"></BaseFooter>
+    <BaseFooter :pizzaDeals="pizzaDeals" :workingHours="workingHours"></BaseFooter>
   </div>
 </template>
 
@@ -165,6 +165,29 @@ export default {
           month: 'NOV',
           title: 'SIENNA PRIVATE DINING ROOM WITH STEPHANE BRUNN',
           location: '204 E. Pizzetta Tommaso'
+        }
+      ],
+      workingHours: [
+        {
+          id:1,
+          day: 'MONDAY',
+          text: 'Kitche Closed'
+        },
+        {
+          id:2,
+          day: 'TUESDAY UNTIL FRIDAY',
+          hour: '9:00 - 22:00'
+        },
+        {
+          id: 3,
+          day: 'SATURDAY',
+          text: 'Saturday 11am to midnight'
+        },
+        {
+          id:4,
+          day: 'SUNDAY',
+          hour: '9:00 - 22:00'
+
         }
       ]
     }
