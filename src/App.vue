@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <BaseHeader></BaseHeader>
-    <TheMain :bannerAdvs="bannerAdvs" :bannerTeam="bannerTeam"></TheMain>
+    <BaseHeader :urbanTastes="urbanTastes"></BaseHeader>
+    <TheMain :bannerAdvs="bannerAdvs" :bannerTeam="bannerTeam" :sliderQuotes="sliderQuotes"></TheMain>
   </div>
 </template>
 
@@ -51,6 +51,34 @@ export default {
         {
           id: 4,
           url: require('/src/assets/img/h1-team-2a.jpg')
+        }
+      ],
+      urbanTastes: [
+        {
+          url: require('/src/assets/img/h3-rev-img-6.png')
+        },
+        {
+          url: require('/src/assets/img/h3-rev-img-4.png')
+        },
+        {
+          url: require('/src/assets/img/h3-rev-img-2.png')
+        }
+      ],
+      sliderQuotes: [
+        {
+          id: 1,
+          text: "FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BESR NEW YORK-STYLE PIZZA SLICE IN NAPLES",
+          author: "WASHINGTON POST 2018"
+        },
+        {
+          id: 2,
+          text: "ONE OF THE BEST PIZZA DOUGH EVER",
+          author: "WASHINGTON POST 2018"
+        },
+        {
+          id: 3,
+          text: "LA MIGLIORE PIZZERIA PER AVERE LA VERA ESPERIENZA NEWYORKESE",
+          author: "REPUBBLICA 2022"
         }
       ]
     }
