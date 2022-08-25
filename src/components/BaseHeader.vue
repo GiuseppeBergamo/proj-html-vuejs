@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="mb-2">
         <BaseNavbar></BaseNavbar>
         <BaseSlider></BaseSlider>
     </header>

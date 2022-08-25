@@ -6,7 +6,7 @@
         </div>
         <div class="col-8">
             <ul class="d-flex justify-content-around align-items-center px-5">
-                <li class="me-4 d-flex align-items-center"><img src="../assets/svg/svg-0.svg" alt="home" class="invert me-1"><a href="#" class="fs-small">HOME</a></li>
+                <li class="me-4 d-flex align-items-center justify-content-center"><img src="../assets/svg/svg-0.svg" alt="home" class="invert me-1"><a href="#" class="fs-small">HOME</a></li>
                 <li class="me-3 ms-4"><a href="#" class="fs-small">PAGES</a></li>
                 <li class="me-3"><a href="#" class="fs-small">MENU</a></li>
                 <li class="d-flex justify-content-center"><img src="../assets/img/h5-logo-divided-header-dark.png" alt="logo" class="img-fluid w-50" id="logo"></li>
@@ -29,12 +29,9 @@
 import BaseButton from './BaseButton.vue';
 export default {
     name: "BaseNavbar",
-    component: {
-        BaseButton,
-    },
     data(){
         return{
-            buttonText: 'OrderOnline'
+            buttonText: 'OrderOnline', 
         }
     },
     components: { BaseButton },
