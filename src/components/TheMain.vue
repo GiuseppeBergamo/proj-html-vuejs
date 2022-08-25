@@ -5,19 +5,22 @@
         <BaseSlider :items="sliderQuotes"></BaseSlider>
     </section>
     <SplitSectionFirst></SplitSectionFirst>
+    <BaseJumbotron></BaseJumbotron>
   </main>
 </template>
 
 <script>
-import BannerSection from "./BannerSection.vue"
-import BaseSlider from "./BaseSlider.vue"
+import BannerSection from "./BannerSection.vue";
+import BaseSlider from "./BaseSlider.vue";
 import SplitSectionFirst from "./SplitSectionFirst.vue";
+import BaseJumbotron from "./BaseJumbotron.vue"
 export default {
     name: 'TheMain',
     components: {
     BannerSection,
     BaseSlider,
-    SplitSectionFirst
+    SplitSectionFirst,
+    BaseJumbotron
 },
     props: {
         bannerAdvs: Array,
