@@ -17,8 +17,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #banner {
-    min-height: 100px;
+  min-height: 100px;
 }
 </style>
