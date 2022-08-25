@@ -2,18 +2,21 @@
   <div id="app">
     <BaseHeader :urbanTastes="urbanTastes"></BaseHeader>
     <TheMain :bannerAdvs="bannerAdvs" :bannerTeam="bannerTeam" :sliderQuotes="sliderQuotes" :logos="logos" :pizzas="pizzas"></TheMain>
+    <BaseFooter :pizzaDeals="pizzaDeals"></BaseFooter>
   </div>
 </template>
 
 <script>
 import BaseHeader from "./components/BaseHeader.vue";
-import TheMain from "./components/TheMain.vue"
+import TheMain from "./components/TheMain.vue";
+import BaseFooter from "./components/BaseFooter.vue"
 
 export default {
   name: 'App',
   components: {
     BaseHeader,
     TheMain,
+    BaseFooter,
   },
   data(){
     return {
@@ -139,6 +142,29 @@ export default {
           url: require('/src/assets/img/h3-product-img-6a-100x100.png'),
           name: 'CAMPAGNOLA',
           price: '$50.00 - $95.00'
+        }
+      ],
+      pizzaDeals: [
+        {
+          id: 1,
+          day: '02',
+          month: 'NOV',
+          title: 'TRADITIONAL NEAPOLITAN PIES IN KYOTO PIZZA MERCATO',
+          location: '204 E. Pizzetta Tommaso'
+        },
+        {
+          id: 2,
+          day: '03',
+          month: 'NOV',
+          title: 'TERRAZZA PATIO DINING SPACE OPENING THIS WEEKEND',
+          location: '204 E. Pizzetta Tommaso'
+        },
+        {
+          id: 3,
+          day: '05',
+          month: 'NOV',
+          title: 'SIENNA PRIVATE DINING ROOM WITH STEPHANE BRUNN',
+          location: '204 E. Pizzetta Tommaso'
         }
       ]
     }
