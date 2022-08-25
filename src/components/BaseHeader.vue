@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 header{
-    min-height: 600px;
+    min-height: 700px;
     background-color: #1B1B1B;
     background-image: url(../assets/img/h3-rev-img-5.png);
     background-repeat: no-repeat;
